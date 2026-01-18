@@ -1,39 +1,114 @@
-nav {
-    background-color: darkblue;
-    padding: 10px
+/* Simple reset + nicer base */
+* {
+    box-sizing: border-box;
 }
 
-main {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-aside {
-    width: 20rem;
-    margin: 1rem auto;
-    border: 1px solid #999;
-    padding: 1rem;
-    background-color: #f5f5f5;
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    line-height: 1.6;
     color: #222;
+    background: #f7f7f9;
+}
+
+/* Header/Nav */
+header {
+    background: #0b2a6f;
+    padding: 1rem;
+}
+
+nav {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* MAIN layout requirement + styling */
+main {
+    max-width: 900px;
+    /* requirement: limit width */
+    margin: 2rem auto;
+    /* center */
+    padding: 1.5rem;
+    background: #fff;
+    border: 1px solid #e6e6ef;
+    border-radius: 0.75rem;
+}
+
+/* Required: target profile image differently than general img */
+main img {
+    width: 150px;
+    /* requirement */
+    height: auto;
+    /* requirement */
+    border-radius: 0.75rem;
+    display: block;
+    margin: 1rem 0;
+}
+
+/* Make the text block not stretch too wide */
+main p {
+    max-width: 65ch;
+}
+
+/* Required paragraph padding change */
+p {
+    padding: 0;
+    /* requirement */
+}
+
+/* ASIDE requirement + nicer card */
+aside {
+    width: min(650px, 90%);
+    /* requirement: width */
+    margin: 1rem auto 2rem;
+    /* requirement: margin */
+    border: 1px solid #d6d6df;
+    /* requirement: border */
+    padding: 1.25rem;
+    /* requirement: padding */
+    background-color: #ffffff;
+    /* requirement: background color */
+    color: #222;
+    /* requirement: color */
+    border-radius: 0.75rem;
+}
+
+aside h2 {
+    margin-top: 0;
 }
 
 aside img {
     width: 200px;
+    /* requirement */
     height: auto;
+    /* requirement */
+    display: block;
+    margin: 0.75rem 0;
+    border-radius: 0.5rem;
 }
 
-/* This targets ONLY the profile image inside main */
-main img {
-    width: 150px;
-    height: auto;
-}
-
-p {
-    padding: 0;
-}
-
+/* Footer requirement + styling */
 footer {
     margin-top: 2rem;
-    border-top: 1px solid #999;
+    /* requirement */
+    border-top: 1px solid #d6d6df;
+    /* requirement */
     text-align: center;
+    /* requirement */
+    padding: 1rem;
+    color: #555;
 }
