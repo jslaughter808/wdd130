@@ -266,6 +266,10 @@ footer p {
     justify-items: center;
 }
 
+.employees h2 {
+    grid-column: 1 / -1;
+}
+
 .employees figure {
     text-align: center;
 }
