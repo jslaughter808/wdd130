@@ -372,3 +372,15 @@ footer p {
         align-items: start;
     }
 }
+
+.contact-address {
+    text-align: center;
+    margin: 1rem 0 2rem;
+    font-size: 1.1rem;
+}
+
+.company-info {
+    text-align: center;
+    margin: 1rem 0 2rem;
+    font-size: 1.1rem;
+}
