@@ -194,6 +194,13 @@ footer p {
     text-decoration: none;
 }
 
+.social img,
+.socialmedia img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
 .socialmedia img {
     width: 32px;
     height: 32px;
