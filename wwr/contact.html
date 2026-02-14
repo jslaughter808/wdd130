@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Rapids Rafting Co.</title>
+    <meta name="description"
+      content="Get in touch with Rapids Rafting Co. for questions, reservations, or general inquiries. Find our contact information, map, and message form.">
+    <meta name="author" content="Joseph Slaughter">
+
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/logo.png" alt="Rapids Rafting Co. logo">
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a class="active" href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+
+        <h1>Contact Us</h1>
+
+        <section class="company-info">
+            <h2>Our Office</h2>
+
+            <p><strong>Address:</strong> 123 River Run Rd, Boise, ID 83702</p>
+            <p><strong>Phone:</strong> (208) 555‑0199</p>
+            <p><strong>Email:</strong> info@rapidsraftingco.com</p>
+
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=YOUR_MAP_EMBED_CODE"
+                  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
+        <section class="employees">
+            <h2>Meet Our Team</h2>
+
+            <figure>
+                <img src="images/employee1.jpg" alt="Lead Guide Sarah">
+                <figcaption>Sarah – Lead Guide</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/employee2.jpg" alt="Safety Coordinator Mark">
+                <figcaption>Mark – Safety Coordinator</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/employee3.jpg" alt="Customer Support Jenna">
+                <figcaption>Jenna – Customer Support</figcaption>
+            </figure>
+        </section>
+
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+
+            <form>
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <fieldset>
+                    <legend>Purpose of Your Message</legend>
+
+                    <label>
+                        <input type="radio" name="purpose" value="general" required>
+                        General Inquiry
+                    </label>
+
+                    <label>
+                        <input type="radio" name="purpose" value="reservation">
+                        Reservation Question
+                    </label>
+
+                    <label>
+                        <input type="radio" name="purpose" value="suggestion">
+                        Website Suggestion
+                    </label>
+                </fieldset>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <label class="checkbox">
+                    <input type="checkbox" name="subscribe">
+                    Please subscribe me to the monthly newsletter
+                </label>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Rapids Rafting Co. | Joseph Slaughter</p>
+
+        <nav class="socialmedia">
+            <a href="https://facebook.com" target="_blank" rel="noopener">
+                <img src="images/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener">
+                <img src="images/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://x.com" target="_blank" rel="noopener">
+                <img src="images/x_social.png" alt="X (Twitter)">
+            </a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
